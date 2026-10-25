@@ -56,11 +56,12 @@ Die Tests prüfen Würfelformeln und Grenzen, Vorteil/Nachteil, TP-Regeln und Sy
 
 ## GitHub und GitHub Pages
 
-Das Projekt ist für ein GitHub-Repository vorbereitet. Es wurde noch kein Remote-Repository angelegt oder veröffentlicht.
+- Quellcode: https://github.com/AlexSeiff/dnd-spieltisch
+- Online spielen: https://alexseiff.github.io/dnd-spieltisch/
 
-1. Repository auf GitHub anlegen und lokale Dateien pushen; Standardbranch main.
-2. In Settings → Pages als Quelle **GitHub Actions** wählen.
-3. Der Workflow .github/workflows/pages.yml testet und baut die App und veröffentlicht dist/ auf GitHub Pages.
+1. Jeder Push auf main startet .github/workflows/pages.yml: testen, bauen und dist/ auf GitHub Pages veröffentlichen.
+2. Pages ist unter Settings → Pages auf **GitHub Actions** eingestellt.
+3. Die Online-Version speichert ihren Spielstand getrennt von localhost im jeweiligen Browser.
 4. Pull Requests laufen durch .github/workflows/ci.yml; sie veröffentlichen nichts.
 
 Vite verwendet relative Assetpfade (base: './'). Die App benötigt keine Server-Routen; Pages-Unterverzeichnisse funktionieren. Workflow basiert auf der [offiziellen Vite-Anleitung](https://vite.dev/guide/static-deploy.html#github-pages). Live-Runden brauchen zusätzlich ein Backend.
@@ -76,7 +77,7 @@ Vite verwendet relative Assetpfade (base: './'). Die App benötigt keine Server-
 
 ## Inhalte und Lizenzen
 
-Kampagne, Charaktere, Gegenstandsbeschreibungen und Kartenillustration sind eigene Beispieldaten. Keine offiziellen Logos, Regelbuchtexte oder gekauften Karten enthalten. Fremdinhalte erst nach Prüfung der jeweiligen Lizenz ergänzen. Bibliothekslizenzen stehen in den installierten Paketen; Lucide-Symbole unter ISC. Eine Lizenz für den eigenen Anwendungscode ist vor einer öffentlichen Freigabe festzulegen.
+Kampagne, Charaktere, Gegenstandsbeschreibungen und Kartenillustration sind eigene Beispieldaten. Keine offiziellen Logos, Regelbuchtexte oder gekauften Karten enthalten. Fremdinhalte erst nach Prüfung der jeweiligen Lizenz ergänzen. Bibliothekslizenzen stehen in den installierten Paketen; Lucide-Symbole unter ISC. Der eigene Anwendungscode steht unter der [MIT-Lizenz](LICENSE).
 
 ## Neue Gestaltung und Karten
 
